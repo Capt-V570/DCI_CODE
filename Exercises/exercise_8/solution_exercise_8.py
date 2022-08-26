@@ -40,7 +40,7 @@ def finding_Nemo():
 finding_Nemo()
 print()
 
-# creating While Loop - TO CHECK
+# creating While Loop - TO CHECK AND CONTINUE
 # nemoing = ""
 # while nemoing:
 #     finding_Nemo()
