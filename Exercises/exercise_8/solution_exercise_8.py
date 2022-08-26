@@ -13,6 +13,7 @@ def find_text(user_input, word_to_search):
     start = user_input.index("Nemo")
     return user_input[start]
 
+word_to_search = "Nemo"
 nemo_found = ""
 
 while nemo_found:
