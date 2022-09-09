@@ -58,14 +58,21 @@ for i in sys.argv[1:]:
         print(help)
     elif i == "--fast":
         fast_mode = True
-        print("\nFAST MODE ENABLED\n")
+        print("\n[LET'S ROCK IT!!!] FAST MODE ENABLED\n")
     elif i == "--v":
         print(verbose)
-    elif i != "--fast":
-        fast_mode = False
-        print("\nDefault Operational Automatically Engaged: SLOW MODE ENABLED\n")
     else:
-        exit("For this Program, please pass 2 Arguments only")
+        exit("\n[NOTE] For this Program, please pass 2 Valid Arguments only\n")
+        
+for i in sys.argv[2]:
+    if i != "--fast":
+        fast_mode = False
+        print("\n[ATTENTION!!!] Default Operational Mode Auto-Engaged: SLOW MODE ENABLED\n")
+    elif i == None:
+        fast_mode = False
+        exit("\n[ATTENTION!!!] Default Operational Mode Auto-Engaged: SLOW MODE ENABLED\n")
+
+
 
 '''
 fast_mode = True 
