@@ -49,7 +49,6 @@ verbose = """\n [VERBOSE HELP]  The operation of this program is essentially
                 End of (verbose) Story, Morning Glory.
                 """
 
-
 fast_mode = False 
 
 for i in sys.argv[1:]:
@@ -60,8 +59,10 @@ for i in sys.argv[1:]:
         print("\nFAST MODE ENABLED\n")
     elif i == "--v":
         print(verbose)
+    elif i != "--fast":
+        print("\nDefault Operational Automatically Engaged: SLOW MODE ENABLED\n")
     else:
-        print("Default Operational Automatically Engaged: SLOW MODE ENABLED")
+        exit("For this Program, please pass 2 Arguments only")
 
 '''
 fast_mode = True 
