@@ -10,7 +10,7 @@ import argparse         # importing library to use 'ArgParse' arguments
 import sys              # import sys.argv lib to use 'Sys.Argv' from CLI
 import time             # import time lib to play with time while printing
 
-speed = float(0.5)
+speed = float(1.5)
 time.sleep(speed)
 
 parser = argparse.ArgumentParser(Description = "Add Name, Surname and Age to the Invitation List")     # initialize parser & giving it a description name
@@ -22,7 +22,7 @@ parser.add_argument("-h", "--help",     type=str, help="Calling for Help")      
 
 args = parser.parse_args()      # create 'args' object and getting parser object info. Read Arguments from 'Command Line Interface'
 
-fast_mode   = sys.argv[4]
+fast_mode = sys.argv[4]
 
 if args.fast == None:
     print("Slow Mode Engaged")
