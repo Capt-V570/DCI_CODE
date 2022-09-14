@@ -2,6 +2,7 @@
 
 # RegEx Exercise
 
+from ast import Index
 import re       # import RegEx library
 
 # Task 1
@@ -10,7 +11,7 @@ print("\n###### TASK 1 ######\n")
 
 text1 = "Berlin is a world city of culture, politics, media and science."
 
-pattern1 = r"\s"
+pattern1 = r"(\s)"
 
 solution1 = re.search(pattern1, text1)
 
@@ -35,7 +36,9 @@ print("\n###### TASK 3 ######\n")
 
 text3 = "Berlin is a city of culture."
 
-pattern3 = r"\s"
+pattern3 = r"(\s)"
 
-solution3 = re.sub(pattern3, text3) 
+solution3 = re.sub(pattern3, text3)
+
+print(solution3)
 
