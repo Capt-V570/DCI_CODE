@@ -1,10 +1,17 @@
 import time                   # import Time module
 
-start_time = time.time()      # current time in seconds (since start of UNIX Epoch)
-y = time.ctime(start_time)    # x converted to human readable time format
+def time_convert(sec):          # create a function to convert and format time
+    mins = sec // 60
+    sec = sec % 60
+    hours = mins // 60
+    mins = mins % 60
+    print("Time Lapsed = {0}:{1}:{2}".format(int(hours),int(mins),sec))
 
-stop_time = int(input("Enter a Time for the Stopwatch: "))      # request input 'stop time' from user
-end_time = time.ctime(stop_time)    # convert Stop_time to readable format
+input("Press Enter to start")
+start_time = time.time()
 
-print()
-print(y)
+input("Press Enter to stop")
+end_time = time.time()
+
+time_lapsed = end_time - start_time
+time_convert(time_lapsed)
