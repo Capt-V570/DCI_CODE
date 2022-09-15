@@ -14,5 +14,12 @@ date_as_string = "2022-09-15"
 
 print(date.fromisoformat(date_as_string))
 
-# let's create some datetime objects
+# How to create a datetime object with time:
+date_1 = datetime(2022, 1, 26, 10, 30, 59)
 
+print(date_1)
+
+# How to create a datetime object with just the date:
+date_2 = date(2022, 1, 26)
+
+print(date_2)
