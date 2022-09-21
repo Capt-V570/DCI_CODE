@@ -37,10 +37,10 @@ dir(current_datetime)
 
 Using the variable called `current_datetime`, print out the current year
 
-- Your result should look like this (assuming today is Wednesday, the value will be 2) :
+- Your result should look like this (assuming this year is 2022, the value will be 2022) :
 
 ```
-2
+2022
 ```
 
 ###
