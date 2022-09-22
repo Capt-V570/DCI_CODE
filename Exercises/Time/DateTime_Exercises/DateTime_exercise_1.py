@@ -40,4 +40,6 @@ print("\n###### Task 4 ######\n")
 
 date_as_string = "Feb 14 2021 8:30AM"
 
-print(datetime.isoformat(date_as_string))
+format_date = datetime.strptime(date_as_string, "%b %d %Y %I:%M%p")
+
+print(format_date)
