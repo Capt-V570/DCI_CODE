@@ -31,7 +31,11 @@ def moltiplication(num1, num2):     # local variables
     return num1 * num2
 
 def division(num1, num2):           # local variables
-    return num1 / num2
+    if num2 == 0:   # exeption in case the second operand is '0'
+        print("You cannot divide a number by zero")
+        return      # simply writing 'return' will allow the code not to break (like usually would happens in this case of a division by 0)
+    else:
+        return num1 / num2
 
 '''
 # call the "global variables"
