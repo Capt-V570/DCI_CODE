@@ -41,7 +41,7 @@ y = 4
 # "placeholder" -- we replace with actual "values"/variable
 print(sum(x,y))
 
-# NOTE: return statements -- CLI (Command Line interface) do not show on the terminal unless you print!!)
+# NOTE: 'return' statements of a function -- do not -- show on the terminal CLI (Command Line interface), unless you 'print'!!)
 
 '''
 
