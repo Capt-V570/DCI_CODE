@@ -69,5 +69,3 @@ print(moltiplication(x, y))
 # in case of a division between these 2 numbers, we will now use:
 print("\nDIVISION:\n")
 print(division(x, y))
-
-
