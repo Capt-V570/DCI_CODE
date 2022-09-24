@@ -33,8 +33,8 @@ print(full_name("D10S"))
 '''
 
 d10s = ("Diego", "Armando", "Maradona", "D10S")
-for name in d10s:
-    names += f"{name} " 
-    print(d10s)
+for args in d10s:
+    full_name += f"{args[0]} {args[2]} is {args[3]}" 
+    print(full_name())
 
 
