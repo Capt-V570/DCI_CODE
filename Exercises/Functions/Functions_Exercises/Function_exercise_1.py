@@ -46,7 +46,7 @@ def full_name(*args, **kwargs):        # kwargs are DICTIONARIES
 
 print("\n >>> EXERCISE 1 - version 1 <<<\n")
 
-# dictionary: 
+# list dictionary: 
 full_name = {"first_name": "Fausto", "last_name": "Doe"}        # global variable
 
 # "Pass by reference" variables can change
@@ -64,7 +64,7 @@ print(name(full_name))
 
 print("\n >>> EXERCISE 1 - version 2 <<<\n")
 
-# dictionary: 
+# list dictionary: 
 full_name = {"first_name": "Fausto", "last_name": "Doe"}        # global variable
 
 # "Pass by reference" variables can change
@@ -75,3 +75,18 @@ def name(full_name):                                            # local variable
     return f"Capt. {full_name['first_name']} {full_name['last_name']}"
 
 print(name(full_name))
+
+
+print("\n >>> EXERCISE 1 - version 3 <<<\n")
+
+# list dictionary: 
+global_variable = {"first_name": "Fausto", "last_name": "Doe"}        # global variable
+
+# "Pass by reference" variables can change
+def function_to_change():                                            # local variable
+    global_variable["first_name"] = "Michel"
+    global_variable.update({"last_name": "Ferrara"})
+    print(global_variable)
+    return global_variable
+
+print(function_to_change())
