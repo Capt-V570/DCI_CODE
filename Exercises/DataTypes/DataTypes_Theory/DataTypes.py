@@ -148,3 +148,14 @@ while s < len(sizes): # 99.9% WHILE [CONDITION -has to be true]:
     print(sizes[s])
     s += 1
 
+
+# To get a total, we have a function that looks like this, rewrite (refactor) the function to use a while loop
+
+def total_list(lst):
+    total = 0
+    for item in lst:
+        total += item
+    return total
+
+# test case
+print(total_list([1,2,3]))   # answer is 6
