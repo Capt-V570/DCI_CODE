@@ -159,3 +159,17 @@ def total_list(lst):
 
 # test case
 print(total_list([1,2,3]))   # answer is 6
+
+
+def total_list(lst):
+    total = 0
+    # counter variable
+    index = 0
+    while index < len(lst):
+        total += lst[index]
+        index += 1
+    return total
+
+# test case
+#print(total_list_while([1,2,3]))   # answer is 6
+print(total_list([1,2,3]))         # answer is 6
