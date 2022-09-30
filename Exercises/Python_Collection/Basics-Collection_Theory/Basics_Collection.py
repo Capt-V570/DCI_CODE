@@ -3,6 +3,8 @@
 ##################################################################
 
 
+# Study from Module 2 - Python Programming // Python Collection Slides
+
 # Exercise:
 
 lists = [ ["John",[ {"name": "Mary"} ], "Amy"], [ 32, 43,{'age': 100}, 51] ]
@@ -30,5 +32,39 @@ s = range(1,5)
 
 list(s)
 
+# Lists: Accessing Values
+
+#### SORTING ####
+
+# Reverse:
+
+words = ['cat', 'aadvark', 'elephant', 'squirrel', 'hippo']
+
+words.reverse()             # proper way to use this method: using it by itself - without re/assigning it to any variable (otherwise returns 'None')
+
+print(words)
 
 
+# Sort:
+words = ['cat', 'aadvark', 'elephant', 'squirrel', 'hippo']
+
+#words = words.sort()       # doing this, will just return 'None' in CLI
+words.sort()                # this is the proper way how to use this method (likewise to the method 'reverse()')
+
+print(words)
+
+
+# NOTE: Playing around:
+
+words.sort(reverse=True)    # this will sort AND reverse at the same time
+
+print(words)
+
+# Remove Replace:
+
+words = ['cat', 'aadvark', 'elephant', 'squirrel', 'hippo']
+
+words[1:3] = ["lion"]       # this, will 'slice' the list and replace these items from [1:3] with the single item 'lion'
+#words[3] = "lion"          # this, will only replace position 3 in the list with 'lion' - not useful for this scope
+
+print(words)
