@@ -32,11 +32,7 @@ for char in set(word.lower()):
 
 
 
-
-
-
-
-
+##### ADD items in a set: 
 
 # In [13]: locations = { "Berlin" }
 
@@ -65,4 +61,67 @@ TypeError: set.add() takes exactly one argument (4 given)
 
 # In [22]: print(locations)
 # {'m', 'S', 'Napoli', 'Sydney', 'i', 'k', 'a', 'r', 'g', 'p', 'w', 'e', 'Y', 'b', 'H', ' ', 'o', 'Hamburg', 'y', 'N', 'New York', 'Berlin', 'u', 'l', 'd', 'n'}
+
+
+locations = {"Berlin", "Munich", "Stockhom", "Barcelona"}
+
+# locations.update({'Tokyo'})
+# locations.update(['Beijing', 'Tokyo'])
+# print(locations)
+
+# locations.pop()
+# locations.remove("Berlin")
+# locations.discard("Berlin")
+# locations.discard("Munich")
+# print(locations)
+# locations.clear()
+# print(locations, "After")
+# copy_location = locations.copy()
+# print(copy_location)
+
+A = { 1, 2, 3, 4}
+
+B = { 5, 6, 7}
+
+# email marketing campaign
+# Container A -> incomes < 1500 euro; Container B -> 1500 euro 
+# print(A.intersection(B))
+# print(A.difference(B))
+# print(B.difference(A))
+
+# symmetric difference (XOR) # Logical thinking 
+# print(A.symmetric_difference(B)) # removes the intersection
+# print(A, B, 'before')
+# print(A - B, 'What is the intersection?')
+# print(A.intersection(B), 'What is the intersection?')
+# B.intersection_update(A)
+# print('A:', A, 'B:', B, 'after')
+# print(A.difference(B))
+# print(B.difference(A))
+
+# print('A: ', A, 'B: ', B)
+# A.symmetric_difference_update(B)
+
+# print(B.symmetric_difference_update(A))
+# print('A: ', A, 'B: ', B)
+print(A.union(B))
+print(A)
+print(B)
+
+# website - membership plans (Basic, Premium, Pro)
+# Reminder or promotion email 
+# A = [1,2,3,4] # 
+# B = [4,5, 6, 7]
+# print(A+B) # send emails, duplicate? 
+# de-duplicate (removes things that show up two times)
+# print(set(A).union(set(B)))
+
+# print(A.isdisjoint(B))
+
+list = {"Christiano",'Antony',"Lisandro","Marcus"}
+# bencher = {"Antony", "Lisandro", "Christian Eriksen"}
+bencher = {"Christiano",'Antony',"Lisandro","Marcus", "Giacomo", "Juan Jesus"}
+print(bencher.issuperset(list))
+
+
 
