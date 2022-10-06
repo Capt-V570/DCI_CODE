@@ -43,13 +43,13 @@ all_names_capitalize = []
 
 for name in names:
     all_names_capitalize.append(name.capitalize())
-
+'''
 
 # version with map(<function>, <iterable>)
 all_names_capitalize = map(lambda name: name.capitalize(), names)
 print(list(all_names_capitalize))
 
-'''
+
 # alternative version with function:
 
 def capitalize(name):
@@ -65,10 +65,22 @@ all_names_capitalize = map(capitalize, names)
 all_names_capitalize = map(lambda name: name.title(), names)
 #also:
 all_names_capitalize = map(str.title, names)
-'''VICTOR DID A FUNCTION HERE _ COPY-PASTE LATER'''
+
+# solving by creating a function (hard coded solution):
+def custom(name):
+    # list comprehensions
+    split_name = name.split(' ')
+    full_string = ''
+    for n in split_name:
+        full_string += n.capitalize() + " "
+    return full_string
+
+all_names_capitalize = map(custom, names)
 
 print(list(all_names_capitalize))
 
+# extra credit
+# names = [{'name': 'jacque doe'}, {'name': 'peer doe'}, {'name': 'mirjam doe'}, {'name': 'shaban doe'}] 
 
 
 ######## FILTER #######
@@ -90,12 +102,14 @@ print(list(names))
 
 names = [{'name': 'jacque doe'}, {'name': 'peer doe'}, {'name': 'mirjam doe'}, {'name': 'shaban doe'}]
 
+# hard coded version (=creating and using a function):
 def filtering_jacque(name_dictionary):
     if name_dictionary["name"].startswith("jacque"):
         return False
     return True
 
 names = filter(filtering_jacque, names)
+
 
 # alternative version using 'lambda function':
 
