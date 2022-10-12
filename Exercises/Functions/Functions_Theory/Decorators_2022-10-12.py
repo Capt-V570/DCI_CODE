@@ -92,7 +92,7 @@ def add_mr_ms(func):
 
 # use a decorator/closure:
 @add_mr_ms      # the '@' symbols is the syntactic sugar for adding a Decorator (in Python) - NOTE: The '@' sign defines the order of which decorator will be used first!
-@make_title     # NOTE: we always have to add all Decorators b4 the last function which is called first (in this case, the 1st function is: 'def make_title')
+@make_title     # NOTE: we always have to add all Decorators b4 the last function which is called first (in this case, the 1st function is: 'def greetings()')
 def greetings(name):
     return name
 
