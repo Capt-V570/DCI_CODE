@@ -1,0 +1,5 @@
+Requirements searched on the web:
+
+For this exercise you could try to import titleize==0.0.4 (use: 'pip install titleize')
+
+NOTE: (I tried HOWEVER did not work in python3.11)
