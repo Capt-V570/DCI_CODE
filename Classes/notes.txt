@@ -1,0 +1,20 @@
+Design a class, called Animal and sub-class called Person.
+- add_child() (add a human child)
+
+Animal
+======
+(attribute / characteristics)
+
+- fur
+- eyes
+- legs
+- tail
+- ears
+
+(action/method)
+- hunt()
+- eat()
+- run()
+
+Person [is a] Animal
+====================
